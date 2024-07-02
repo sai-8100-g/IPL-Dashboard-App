@@ -1,0 +1,77 @@
+.iplDashboard {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.dashboardImgHeading {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboardImgHeading > img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1%;
+}
+
+.dashboardImgHeading > h1 {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 3vw;
+}
+
+.cardsUl {
+  width: 60%;
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.lowerDashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .cardsUl {
+    width: 80%;
+    padding: 0px;
+  }
+
+  .dashboardImgHeading > img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .cardsUl {
+    width: 80%;
+    padding: 0px;
+  }
+
+  .dashboardImgHeading > img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardsUl {
+    width: 60%;
+    padding: 0px;
+  }
+}

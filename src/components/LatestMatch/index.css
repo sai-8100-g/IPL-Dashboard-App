@@ -1,0 +1,34 @@
+.latestMatchCard {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e293b;
+}
+
+.matchInfo1,
+matchInfo2,
+.competingTeamLogo {
+  width: 30%;
+}
+
+.competingTeamLogo > img {
+  width: 80%;
+}
+
+.matchInfo1,
+.matchInfo2 {
+  color: #ffffff;
+}
+
+.matchInfo2 {
+  text-align: right;
+}
+
+
+@media (max-width:576px) {
+  .matchInfo1,
+.matchInfo2 {
+     font-size: 2vw;
+}
+}

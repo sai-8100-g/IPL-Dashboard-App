@@ -1,0 +1,70 @@
+
+
+.matchCard {
+  background-image: linear-gradient(to bottom, #d91c1f, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.srh {
+  background-image: linear-gradient(to bottom, #f26d22, #1e293b);
+}
+
+.pbks {
+  background-color: #a4261d;
+}
+
+.kkr {
+  background-color: #5755a7;
+}
+
+.rcb {
+  background-color: #d91c1f;
+}
+
+.csk {
+  background-color: #f7db00;
+}
+
+.mi {
+  background-color: #13418b;
+}
+
+.latestParaCard {
+  width: 80%;
+  text-align: left;
+}
+
+.latestParaCard > p {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.teamMatchUl {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.bannerCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+.bannerCard > img {
+  width: 80%;
+}
+
+@media (max-width: 576px) {
+  .teamMatchUl {
+    width: 100%;
+  }
+}

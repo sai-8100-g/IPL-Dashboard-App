@@ -1,0 +1,87 @@
+.matchCardItem {
+  float: left;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 2%;
+  height: 500px;
+  margin: 1%;
+  border-radius: 10px;
+}
+
+.mathCardLogo {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mathCardLogo > img {
+  width: 160px;
+  height: 160px;
+}
+
+.red,
+.green,
+.venue {
+  font-family: 'Bree Serif';
+  font-size: 1vw;
+  color: #ffffff;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+@media (max-width: 576px) {
+  .matchCardItem {
+    height: 150px;
+  }
+
+  .mathCardLogo > img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width:576px) and (max-width:992px) {
+    .matchCardItem {
+    height: 200px;
+  }
+
+  .mathCardLogo > img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .matchCardItem {
+    height: 300px;
+  }
+
+  .mathCardLogo > img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+@media (min-width:1201px) {
+   .matchCardItem {
+    height: 400px;
+  }
+
+  .mathCardLogo > img {
+    width: 100px;
+    height: 100px;
+  }
+}

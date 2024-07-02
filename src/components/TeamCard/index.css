@@ -1,0 +1,97 @@
+.cardItem {
+  float: left;
+  width: 48%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  border: none;
+  border-radius: 10px;
+  box-shadow:
+    0px 0px 5px #ffffff,
+    -0px -0px 5px #ffffff;
+  background-color: #ffffff33;
+  margin: 1%;
+  height: 150px;
+  transition: transform 500ms;
+}
+
+.cardItem:hover {
+  transform: scale(0.8);
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.teamImg {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+}
+
+.teamName {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  align-self: center;
+  text-align: center;
+  font-size: 2vw;
+}
+
+@media (max-width: 576px) {
+  .teamImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardItem {
+    width: 200px;
+    height: 100px;
+    margin: 4%;
+  }
+
+  .teamName {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .teamImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardItem {
+    width: 200px;
+    height: 100px;
+    margin: 4%;
+  }
+  .teamName {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .teamImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cardItem {
+    width: 260px;
+    height: 100px;
+    margin: 4%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .teamImg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cardItem {
+    width: 320px;
+    height: 120px;
+    margin: 4%;
+  }
+}
