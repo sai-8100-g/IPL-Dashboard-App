@@ -69,26 +69,37 @@ class TeamMatches extends Component {
 
   getTeamColorClass = () => {
     const {teamId} = this.state
-    const teamColors = {
-      SRH: 'srh',
-      KKR: 'kkr',
-      CSK: 'csk',
-      MI: 'mi',
-      RR: 'rr',
-      DC: 'dc',
-      RCB: 'rcb',
-      PBKS: 'pbks',
+    console.log(teamId)
+    switch (teamId) {
+      case 'SRH':
+        return 'srh'
+      case 'RR':
+        return 'rr'
+      case 'KKR':
+        return 'kkr'
+      case 'CSK':
+        return 'csk'
+      case 'KXP':
+        return 'pbks'
+      case 'MI':
+        return 'mi'
+      case 'RCB':
+        return 'rcb'
+      case 'DC':
+        return 'dc'
+      default:
+        return null
     }
-    return teamColors[teamId] || ''
   }
 
   render() {
     const {recentMatches, latestMatchDetails, bannerUrl, isLoader} = this.state
     const color = this.getTeamColorClass()
+    console.log(color)
     return (
       <div className={`matchCard ${color}`}>
         {isLoader ? (
-          <div data-testid="loader">
+          <div>
             <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
           </div>
         ) : (

@@ -1,7 +1,4 @@
-
-
 .matchCard {
-  background-image: linear-gradient(to bottom, #d91c1f, #1e293b);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,11 +6,15 @@
   align-items: center;
 }
 .srh {
-  background-image: linear-gradient(to bottom, #f26d22, #1e293b);
+  background-image: linear-gradient(to bottom, #f26d22);
 }
 
 .pbks {
-  background-color: #a4261d;
+  background-color: #f75448;
+}
+
+.dc {
+  background-color: #13418b;
 }
 
 .kkr {
@@ -21,7 +22,7 @@
 }
 
 .rcb {
-  background-color: #d91c1f;
+  background-image: linear-gradient(to bottom, #a4261d, #1e293b);
 }
 
 .csk {
@@ -29,7 +30,11 @@
 }
 
 .mi {
-  background-color: #13418b;
+  background-color: #0d60e6;
+}
+
+.rr {
+  background-image:linear-gradient(to bottom, #13418b, #da237b) ;
 }
 
 .latestParaCard {

@@ -2,16 +2,23 @@ import './index.css'
 
 const RecentMatches = props => {
   const {listItem} = props
-  const {matchStatus, competingTeam, competingTeamLogo, venue} = listItem
+  const {
+    matchStatus,
+    competingTeam,
+    competingTeamLogo,
+    venue,
+    result,
+  } = listItem
   const statusColor = matchStatus === 'Lost' ? 'red' : 'green'
   return (
     <li className="matchCardItem">
       <div className="mathCardLogo">
-        <img src={competingTeamLogo} alt={competingTeam} />
+        <img src={competingTeamLogo} alt={`competing team ${competingTeam}`} />
       </div>
-      <h1 className="teamName">{competingTeam}</h1>
+      <p className="teamName">{competingTeam}</p>
       <p className="venue">{venue}</p>
       <p className={statusColor}>{matchStatus}</p>
+      <p className={statusColor}>{result}</p>
     </li>
   )
 }
